@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Rock+Salt&display=swap" rel="stylesheet">
+    <style>
+        @media only screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .container div {
+                padding: 10px;
+            }
+            
+            .container div p {
+                text-align: center;
+                text-align-last: center;
+                align-self: center;
+                line-height: 12px;
+            }
+
+            #my-pic {
+                width: 60vw;
+            }
+
+            .notes {
+                flex-direction: column;
+            }
+
+            #about-info, #article-list, #contacts {
+                width: 70%;
+            }
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Arial";
+            width: 100%;
+            overflow-x: hidden;
+        }
+        
+        p {
+            display: inline;
+            margin: 2px;
+            z-index: 1;
+        }
+
+        nav {
+            padding-top: 100px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav a {
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+
+        a {
+            color: black;
+        }
+
+        h1 {
+            margin: auto;
+            text-align: center;
+            font-size: 32px;
+            font-family: "Rock Salt";
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container div {
+            justify-content:center;
+            text-align: center;
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            text-align: right;
+            text-align-last: right;
+        }
+        .right {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            text-align: left;
+            text-align-last: left;
+        }
+        #my-pic {
+            width: 40vw;
+            margin-left: -60px;
+            margin-right: -60px;
+            z-index: -1;
+        }
+
+        #pin {
+            width: 40px;
+            margin: -4px;
+            margin-bottom: -20px;
+            z-index: 1;
+        }
+
+        #about-info, #article-list, #contacts {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 60px;
+        }
+
+        #article-list, #contacts {
+            text-align: center;
+            text-align-last: center;
+        }
+
+        .notes {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: small;
+        }
+
+        .note {
+            width: 160px;
+            height: 160px;
+            background-color: rgb(255, 215, 39);
+            margin: 4px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .note p {
+            margin-left: 40px;
+            margin-right: 10px;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            text-align: right;
+            text-align-last: right;
+            margin: 10px;
+        }
+
+        footer p {
+            font-size: 10px;
+            margin-bottom: -2vw;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#start">HOME</a>
+        <a href="#article-list">ARTICLES</a>
+        <a href="#contacts">CONTACT</a>
+    </nav>
+    <h1 id="start">dawn's magazine</h1>
+    <section class="container">
+        <div class="left">
+            <p>hello world!</p>
+            <p>my name is <u>dawn</u>.</p>
+            <p>been alive since 2005.</p>
+        </div>
+        <div class="mid">
+            <img id='my-pic' src="me_pink.png" alt="me">
+        </div>
+        <div class="right">
+            <p>i made this website</p>
+            <p>to share some of my</p>
+            <p>thoughts, pictures, & works &#9786;</p>
+        </div>
+    </section>
+    <div id="about-info">
+        <p>get to know me! <br><br></p>
+        <div class="notes">
+            <div class="note">
+                <img src="pin.png" id="pin">
+                <p>a few things i love:</p>
+                <p>[ / ] books</p>
+                <p>[ / ] movies</p>
+                <p>[ / ] music</p>
+                <p>[ / ] peoople</p>
+                <p>[ / ] food</p>
+                <p>[ / ] feeling</p>
+                <br>
+            </div>
+            <div class="note">
+                <img src="pin.png" id="pin">
+                <p>a quote i like:</p>
+                <br>
+                <p> [ / ] The bird fights its way out of the egg. The egg is the world. Who would be born must first destroy a world.</p>
+            </div>
+        </div>
+    </div>
+    <div id="article-list">
+        <p>essays/poems/words <br><br></p>
+        <a href="https://www.orions-belt.net/archives/syndrome" target="_blank"><p>poem - syndrome()</p></a>
+        <a href="article1/article.html"><p>essay - hell is other people and heaven is each other</p></a>
+    </div>
+    <div id="contacts">
+        <p>get in touch! <br><br></p>
+        <a href="https://strava.app.link/x9OEm9WPXUb" target="_blank"><p>strava</p></a>
+        <a href="https://github.com/dawn-4stars" target="_blank"><p>github</p></a>
+        <a href="https://www.facebook.com/ddcanada/" target="_blank">facebook</a>
+        <a href="mailto:dawndotexe15@gmail.com" target="_blank">via email</a>
+    </div>
+    <footer>
+        <p>last updated 13 july 2025</p>
+    </footer>
+</body>
+</html>
